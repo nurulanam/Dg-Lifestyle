@@ -1,0 +1,81 @@
+/* global css */
+:root {
+    --paste: #0F556B;
+    --gray: #E4E4E4;
+}
+*{
+    font-family: "Outfit", sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+/* Header */
+.header{
+    
+}
+.header-logo{
+    max-width: 115px;
+}
+/* Header ~ header search */
+.header-search{
+    min-width: 50%;
+}
+.header-search .search-input{
+    padding: 0.7rem !important;
+}
+.header-search .search-btn{
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}
+
+/* Banner Section  */
+.banner-section .banner-inner{
+    min-height: 500px;
+}
+.banner-inner .banner-paste{
+    background-color: var(--paste);
+}
+.banner-inner .banner-gray{
+    background-color: var(--gray);
+}
+.banner-inner .banner-door{
+    background: url('../img/store-banner-door.png') center bottom no-repeat;
+    background-color: var(--gray);
+    background-size: cover;
+}
+.banner-inner .banner-sofa{
+    background: url('../img/store-banner-sofa.jpg') center center no-repeat;
+    background-color: var(--gray);
+    background-size: cover;
+}
+
+/* Categories Section  */
+.categories-section .ad .wholesale{
+    background: url('../img/fire-cracker.jpg') center center no-repeat;
+    background-size: cover;
+}
+.wholesale p{
+    transform: rotateZ(-90deg);
+}
+.wholesale img{
+    max-width: 220px;
+}
+.villa{
+    background: url('../img/villa.jpg') center center no-repeat;
+    background-size: cover;
+    min-height: 400px;
+}
+
+.categories-section ul.categories{
+}
+ul.categories li h4{
+    color: #323232;
+    font-size: 1rem;
+}
+
+
+.test-body{
+    height: 150vh;
+    width: 100%;
+    background-color: var(--gray);
+}
