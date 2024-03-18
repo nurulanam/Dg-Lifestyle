@@ -15,7 +15,7 @@ body{
 /* Custom Utilites */
 h2{
     color: var(--dark);
-    font-size: 36px;
+    font-size: 26px;
     font-weight: 600;
     line-height: 1.3rem;
     margin: 0;
@@ -85,26 +85,36 @@ p{
     padding-left: 2rem !important;
     padding-right: 2rem !important;
 }
-
+.navbar-nav-red li a{
+    color: var(--dark);
+}
+.navbar-nav-red li:hover a,
+.navbar-nav-red li a.active{
+    color: var(--red) !important;
+}
 /* Banner Section  */
 .banner-section .banner-inner{
-    min-height: 500px;
+    min-height: 350px;
 }
 .banner-inner .banner-paste{
     background-color: var(--paste);
+    min-height: 200px;
 }
 .banner-inner .banner-gray{
     background-color: var(--gray);
+    min-height: 200px;
 }
 .banner-inner .banner-door{
     background: url('../img/store-banner-door.png') center bottom no-repeat;
     background-color: var(--gray);
     background-size: cover;
+    min-height: 200px;
 }
 .banner-inner .banner-sofa{
     background: url('../img/store-banner-sofa.jpg') center center no-repeat;
     background-color: var(--gray);
     background-size: cover;
+    min-height: 200px;
 }
 
 /* Categories Section  */
@@ -116,7 +126,7 @@ p{
     transform: rotateZ(-90deg);
 }
 .wholesale img{
-    max-width: 220px;
+    max-width: 100px;
 }
 .villa{
     background: url('../img/villa.jpg') center center no-repeat;
@@ -151,7 +161,7 @@ ul.categories li h4{
 
 /* Shop By Category Section */
 section.shop-by-category-section{
-    padding: 50px 0px;
+    padding: 30px 0px;
 }
 
 .all-categories img{
@@ -159,8 +169,8 @@ section.shop-by-category-section{
 }
 
 /* Inspiration Section  */
-.inspiration-section{
-    padding: 50px 0px;
+section.inspiration-section{
+    padding: 30px 0px;
 }
 .max-w-620{
     max-width: 620px;
@@ -170,12 +180,12 @@ section.shop-by-category-section{
 section.new-arrivals-section{
     background-color: transparent;
     background-image: linear-gradient(180deg, #FFFFFF 0%, #F8F8F8 100%);
-    padding: 50px 0px; 
+    padding: 30px 0px; 
 }
 
 /* Footer  */
 footer{
-    padding: 50px 0px;
+    padding: 30px 0px 20px 0px;
     max-width: 1140px;
     margin: auto;
 }
@@ -198,15 +208,56 @@ footer .social-links li:hover a{
 }
 .footer-list a{
     color: var(--dark);
+    font-size: 15px;
 }
 .footer-list li:hover a{
     color: var(--red);
 }
 
 
+/* Media Queries  */
 
-.test-body{
-    height: 150vh;
-    width: 100%;
-    background-color: #fff;
+@media (min-width: 576px) { 
+
+}
+
+@media (min-width: 768px) { 
+    h2{
+        font-size: 36px;
+    }
+    .header-search{
+        width: auto !important;
+    }
+    section.banner-section .banner-inner{
+        min-height: 500px;
+    }
+    .wholesale img{
+        max-width: 160px;
+    }
+    section.shop-by-category-section{
+        padding: 50px 0px;
+    }
+    section.inspiration-section{
+        padding: 50px 0px;
+    }
+    section.new-arrivals-section{
+        padding: 50px 0px;
+    }
+    footer{
+        padding: 50px 0px 20px 0px;
+    }
+}
+
+@media (min-width: 992px) { 
+    .wholesale img{
+        max-width: 220px;
+    }
+}
+
+@media (min-width: 1200px) { 
+
+}
+
+@media (min-width: 1400px) { 
+
 }
