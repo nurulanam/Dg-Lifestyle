@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DG Life Styles</title>
+    <title>@yield('title') | {{ config('app.name') }}</title>
     <link rel="icon" href="img/favicon.png" sizes="32x32" />
 <link rel="icon" href="img/favicon.png" sizes="192x192" />
 <link rel="apple-touch-icon" href="img/favicon.png" />
